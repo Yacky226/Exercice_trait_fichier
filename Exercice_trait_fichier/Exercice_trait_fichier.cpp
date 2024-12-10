@@ -8,12 +8,8 @@ int main()
 {
     // Configurer la console pour UTF-8
     SetConsoleOutputCP(CP_UTF8); // Sortie standard en UTF-8
-    SetConsoleCP(CP_UTF8);       // Entrée standard en UTF-8
-
-    std::string mot = "issa";
+    SetConsoleCP(CP_UTF8);       // Entrée standard en UTF-
     Traitement T;
-    T.charger("file.txt");
-    std::cout << "le mot " << mot << " se repète " << T.count_word(mot) << " fois dans le texte" << std::endl;
     T.analyserTexte("Satut.txt");
     T.afficher();
     std::cout << "Fin chargement -----------------------" << std::endl;
